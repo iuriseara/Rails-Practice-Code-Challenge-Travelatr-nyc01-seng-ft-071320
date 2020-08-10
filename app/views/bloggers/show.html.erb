@@ -1,0 +1,17 @@
+<h1> <%= @blogger.name %> </h1>
+
+<br />
+<p> Age: <%= @blogger.age %> </p>
+<br />
+<br />
+<p> Bio: <%= @blogger.bio %> </p>
+<br />
+
+<br />
+<p> Total likes: <%= @blogger.total_likes %> </p>
+
+<br />
+<%= link_to @blogger.popular_post.title, post_path(@blogger.popular_post) %>
+<br />
+Destinations: 
+<%= @blogger.top_five %>
